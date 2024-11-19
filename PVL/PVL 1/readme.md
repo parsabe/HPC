@@ -36,11 +36,9 @@ How to Run
 ----------
 
 ### Python Implementation
-
-1.  bashCopy codecd python
-    
-2.  bashCopy codepython main.py -n \-t \[--test-scaling\]
-    
+```bash
+  python main.py -n <number of n> -t <number of threads>
+``` 
 
 #### Arguments:
 
@@ -53,19 +51,25 @@ How to Run
 
 #### Examples:
 
-*   bashCopy codepython main.py -n 100 -t 4
+```bash
+python main.py -n 100 -t 4
+```
+
     
-*   bashCopy codepython main.py -n 100 --test-scaling
+```bash
+python main.py -n 100 --test-scaling
+```
     
 ----------
 ### C++ Implementation
 
-1.  bashCopy codecd cpp
-    
-2.  bashCopy codeg++ jacobi\_parallel.cpp -o jacobi\_parallel -std=c++17 -pthread
-    
-3.  bashCopy code./jacobi\_parallel -n \-t \[--test-scaling\]
-    
+```bash
+eg++ jacobi_parallel.cpp -o jacobi\_parallel -std=c++17 -pthread
+
+```
+```bash
+./jacobi_parallel -n <number of n> -t <number of threads>
+```    
 
 #### Arguments:
 
@@ -78,9 +82,14 @@ How to Run
 
 #### Examples:
 
-*   bashCopy code./jacobi\_parallel -n 100 -t 4
+```bash
+./jacobi_parallel -n 100 -t 4
+
+```
     
-*   bashCopy code./jacobi\_parallel -n 100 --test-scaling
+```bash
+./jacobi_parallel -n 100 --test-scaling
+```
     
 
 ### Strong Scaling Test
