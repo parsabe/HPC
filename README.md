@@ -3,7 +3,7 @@ Welcome to the Tech Insights Repository! This repository features four in-depth 
 
 ## Projects
 
-1. PVl 1 : Jacobi Method: Serial and Parallel Implementations 
+1. PVL 1 : <a href='https://github.com/parsabe/HPC/tree/master/PVL/PVL%201'>Jacobi Method: Serial and Parallel Implementations</a> 
 
 
 
