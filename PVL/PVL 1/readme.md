@@ -4,23 +4,26 @@ Jacobi Method: Serial and Parallel Implementations
 This repository contains implementations of the Jacobi iterative method in Python and C++, designed for solving systems of linear equations efficiently. The project demonstrates both serial and parallel approaches, with a strong emphasis on performance benchmarking using parallelism and multithreading.
 
 ## Task 
-The task is to define a n × n matrix A is defined as:
-
-The n × n matrix A is defined as:
+The task is to define:
+1. n × n matrix A like below:
 
 $$
 A =
 \begin{pmatrix}
-+20 & -2^{-2} & -2^{-4} & -2^{-8} & \cdots & -2^{-2n+1} \\
--2^{-2} & +20 & -2^{-2} & -2^{-4} & \cdots & -2^{-2n+2} \\
--2^{-4} & -2^{-2} & +20 & -2^{-2} & \cdots & -2^{-2n+3} \\
--2^{-8} & -2^{-4} & -2^{-2} & +20 & \cdots & -2^{-2n+4} \\
-\vdots & \vdots & \vdots & \vdots & & \vdots \\
--2^{-2n+1} & -2^{-2n+2} & -2^{-2n+3} & -2^{-2n+4} & & +20
++2^0 & -2^{-2} & -2^{-4} & -2^{-8} & \cdots & -2^{-2^{n+1}} \\
+-2^{-2} & +2^0 & -2^{-2} & -2^{-4} & \cdots & -2^{-2^{n+2}} \\
+-2^{-4} & -2^{-2} & +2^0 & -2^{-2} & \cdots & -2^{-2^{n+3}} \\
+-2^{-8} & -2^{-4} & -2^{-2} & +2^0 & \cdots & -2^{-2^{n+4}} \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots \\
+-2^{-2^{n+1}} & -2^{-2^{n+2}} & -2^{-2^{n+3}} & -2^{-2^{n+4}} & \cdots & +2^0
 \end{pmatrix}
 $$
 
 
+2. Implement a parallel Jacobi method using OpenMP. The iterations stop when the norm of r = b - Ax which has been reduced by 10^-6
+3. Parallelize the code using OpenMP.
+4. Perform a strong scaling test using 1, 2, 4, 8 threads and a problem size n = 10000. The
+obtained times should be close to
 
 
 Features
@@ -31,7 +34,7 @@ Features
 *   **Serial Implementation**: A basic version of the Jacobi method, executed sequentially.
     
 *   **Parallel Implementation**: A multithreaded version that leverages multiprocessing in Python and C++'s threading capabilities.
-    
+    7
 *   **Performance Benchmarking**: Includes options for running strong scaling tests to evaluate speedups with different thread counts.
     
 
