@@ -3,6 +3,26 @@ Jacobi Method: Serial and Parallel Implementations
 
 This repository contains implementations of the Jacobi iterative method in Python and C++, designed for solving systems of linear equations efficiently. The project demonstrates both serial and parallel approaches, with a strong emphasis on performance benchmarking using parallelism and multithreading.
 
+## Task 
+The task is to define a n × n matrix A is defined as:
+
+The n × n matrix A is defined as:
+
+$$
+A =
+\begin{pmatrix}
++20 & -2^{-2} & -2^{-4} & -2^{-8} & \cdots & -2^{-2n+1} \\
+-2^{-2} & +20 & -2^{-2} & -2^{-4} & \cdots & -2^{-2n+2} \\
+-2^{-4} & -2^{-2} & +20 & -2^{-2} & \cdots & -2^{-2n+3} \\
+-2^{-8} & -2^{-4} & -2^{-2} & +20 & \cdots & -2^{-2n+4} \\
+\vdots & \vdots & \vdots & \vdots & & \vdots \\
+-2^{-2n+1} & -2^{-2n+2} & -2^{-2n+3} & -2^{-2n+4} & & +20
+\end{pmatrix}
+$$
+
+
+
+
 Features
 --------
 
